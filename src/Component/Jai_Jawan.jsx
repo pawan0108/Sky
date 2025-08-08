@@ -1,22 +1,20 @@
-import React from 'react';
-
+import React from 'react'
 const images = [
-  { image: "/Image/Jai_Jawan/01.jpg" },
-  { image: "/Image/Jai_Jawan/02.jpg" },
-  { image: "/Image/Jai_Jawan/03.jpg" },
-  { image: "/Image/Jai_Jawan/04.jpg" },
-  { image: "/Image/Jai_Jawan/05.jpg" },
-  { image: "/Image/Jai_Jawan/06.jpg" },
-  { image: "/Image/Jai_Jawan/07.jpg" },
-  { image: "/Image/Jai_Jawan/08.jpg" },
-  { image: "/Image/Jai_Jawan/09.jpg" },
-  { image: "/Image/Jai_Jawan/10.jpg" },
-  { image: "/Image/Jai_Jawan/11.jpg" }
-];
-
+      { image: `/Image/Jai_Jawan/01.jpg` },
+      { image: `/Image/Jai_Jawan/02.jpg` },
+      { image: `/Image/Jai_Jawan/03.jpg` },
+      { image: `/Image/Jai_Jawan/04.jpg` },
+      { image: `/Image/Jai_Jawan/05.jpg` },
+      { image: `/Image/Jai_Jawan/06.jpg` },
+      { image: `/Image/Jai_Jawan/07.jpg` },
+      { image: `/Image/Jai_Jawan/08.jpg` },
+      { image: `/Image/Jai_Jawan/09.jpg` },
+      { image: `/Image/Jai_Jawan/10.jpg` },
+      { image: `/Image/Jai_Jawan/11.jpg` }
+    ];
 export default function Jai_Jawan({ onBack }) {
-  return (
-    <div className="bg-emerald-200 text-white px-4 py-8 min-h-screen relative">
+ return (
+     <div className="bg-emerald-200 text-white px-4 py-8 min-h-screen relative">
 
       {/* Back Button */}
       <button
@@ -38,12 +36,12 @@ export default function Jai_Jawan({ onBack }) {
           >
             <img
               src={item.image}
-              alt={`Jai Jawan ${index + 1}`}
+              alt={`Holi ${index + 1}`}
               className="w-full h-full object-cover"
             />
           </div>
         ))}
       </div>
     </div>
-  );
+   );
 }
